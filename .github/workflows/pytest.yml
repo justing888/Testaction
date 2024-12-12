@@ -7,9 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone repository
-        run: |
-          git clone https://github.com/justing888/Testaction.git
-          cd Testaction
+        uses: actions/checkout@v4
       - name: install pytest
         run: pip install pytest
       - name: run pytest
